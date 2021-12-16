@@ -4,13 +4,10 @@ function getInteiroAleatorio(min, max){
 }
 
 /* ----- FOR ----- */
-
-/*
 const arrayNotas = [1.2, 5, 6, 6.7, 8, 2.5, 7.8]
 for (let i = 0; i < arrayNotas.length; i++) {
     console.log(`Nota ${i+1}: ${arrayNotas[i]}`)
 }
-*/
 
 /* ----- FOR-IN ----- */
 const pessoa = {
@@ -23,10 +20,7 @@ for (let atributo in pessoa) {
     console.log(`${atributo}: ${pessoa[atributo]}`)
 }
 
-
 /* ----- WHILE ----- */
-
-/*
 let opcao = 0
 while (opcao != -1){
     opcao = getInteiroAleatorio(-1, 10)
@@ -35,11 +29,7 @@ while (opcao != -1){
 
 console.log('Saiu do WHILE, até a próxima!')
 
-*/
-
 /* ----- DO-WHILE ----- */
-
-/*
 let opcao = -1
 
 console.log(`Inicio ${opcao}`)
@@ -49,4 +39,3 @@ do {
 } while (opcao != -1);
 
 console.log('Saiu do WHILE, até a próxima!')
-*/
