@@ -31,5 +31,5 @@ function soma(a, b) {
 soma(1, 2)(3)
 /*  O exemplo abaixo é a mesma chamado que a linha 31
 ->    const somado = soma(1, 2)
-->       somado(3)
+->    somado(3)
 */

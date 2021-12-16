@@ -17,6 +17,6 @@ console.log(soma2(), soma2(3), soma2(1, 4, 'jailton'))
 
 // Valor padrão do ES2015(ES6)
 function soma3(a = 1, b = 1, c = 1){
-    return a + b + c
+    return a + b + c 
 }
 console.log(soma3(), soma3(2,2), soma3(5,5,5))
