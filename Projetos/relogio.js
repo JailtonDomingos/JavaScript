@@ -20,8 +20,8 @@ function Relogio() {
         }
 
         console.log(`${this.hora} : ${this.minuto} : ${this.segundo}`)
-    }.bind(this), 1000)
+    }.bind(this), 1000) // Função controladora para atualizar o relógio a cada segundo e .bind para referenciar o this do objeto
 
 }
 
-new Relogio
+new Relogio // Instanciando um objeto relógio 
