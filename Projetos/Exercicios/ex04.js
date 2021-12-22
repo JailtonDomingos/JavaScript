@@ -4,8 +4,8 @@ e o resto da divisão destes dois valores.
 */
 
 function div(x, y) {
-    return console.log(x%y)
+    return x%y
 }
 
-div(10, 3)
-div(10, 2)
+console.log(div(10, 3))
+console.log(div(10, 2))

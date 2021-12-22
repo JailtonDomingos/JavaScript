@@ -4,7 +4,7 @@ multiplicação e divisão desses valores.
 */
 
 function soma (x ,y) {
-    return console.log(`Soma: ${x + y}, Subtração: ${x - y}, Multiplicação: ${x * y}, Divisão: ${x / y}`)
+    return `Soma: ${x + y}, Subtração: ${x - y}, Multiplicação: ${x * y}, Divisão: ${x / y}`
 }
 
-soma(2,2)
+console.log(soma(2,2))

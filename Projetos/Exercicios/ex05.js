@@ -7,7 +7,7 @@ que ela receba um valor como 0.30000000000000004 e retorne R$0,30 (observe a ví
 */
 
 function formataMoeda(x) {
-    return console.log(x.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }))
+    return x.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
 }
 
-formataMoeda(0.30000000000000004)
+console.log(formataMoeda(3212.53450))
