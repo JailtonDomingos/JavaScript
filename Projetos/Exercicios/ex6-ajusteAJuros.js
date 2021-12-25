@@ -4,6 +4,7 @@ primeira função retornará o montante da aplicação financeira sob o regime d
 retornará o valor da aplicação sob o regime de juros compostos.
 */
 
+// O ajuste é feito adicionando o valor do juros somado com o valor anterior
 function jurosComposto (capitalInicial, taxaJuros, tempoAplicacao) {jurosComposto
     let montante = capitalInicial
     for (let i = 1; i <= tempoAplicacao; i++) {
@@ -12,6 +13,7 @@ function jurosComposto (capitalInicial, taxaJuros, tempoAplicacao) {jurosCompost
     return montante
 }
 
+// O ajuste é feito identificando o valor e adicionando a variável 
 function jurosSimples (capitalInicial, taxaJuros, tempoAplicacao) {
     let montante = capitalInicial
     for (let i = 1; i <= tempoAplicacao; i++) {
