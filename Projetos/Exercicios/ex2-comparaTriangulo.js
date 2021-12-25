@@ -9,6 +9,8 @@ ao tamanho de seus lados. (Neste exemplo deve-se abstrair as condições matemá
 triângulo).
 */
 
+
+// Essa lógica faz a diferenciação dos parans para a identificação do triângulo 
 function comparaTriangulo (x, y, z) {
     switch (true) {
         case (x == y && y == z):
