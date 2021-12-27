@@ -21,3 +21,5 @@ function Rectangle(a, b) {
     return rectangle
     
 }
+
+console.log(5, 3)
