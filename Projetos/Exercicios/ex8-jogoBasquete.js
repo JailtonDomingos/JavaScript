@@ -13,19 +13,19 @@ aconteceu no sétimo jogo.)
 */
 
 function comparaPontos (pontos) {
-    let arrayPontos = pontos.split(' ').map(Number)
+    let arrayPontos = pontos.split(' ').map(Number) // Adicionando valores de String para vetor
     let pontuacaoAlta = 0, pontuacaoBaixa = 0
     let arrayRetorno = [0 ,0]
     
     pontuacaoAlta = arrayPontos[0]
     pontuacaoBaixa = arrayPontos[0]
 
-    for (let i = 0; i < arrayPontos.length; i++) {
-        if (pontuacaoAlta < arrayPontos[i]) {
+    for (let i = 0; i < arrayPontos.length; i++) { // For de controle da quantidade de número do vetor
+        if (pontuacaoAlta < arrayPontos[i]) { // Controle para identificar pontuação mais alta
             pontuacaoAlta = arrayPontos[i]
             arrayRetorno[0]++
         }
-        if (arrayPontos[i] < pontuacaoBaixa) {
+        if (arrayPontos[i] < pontuacaoBaixa) { // Controle da segunda maior pontuação
             pontuacaoBaixa = arrayPontos[i]
             arrayRetorno[1] = i+1
         }
