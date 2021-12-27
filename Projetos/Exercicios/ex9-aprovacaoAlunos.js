@@ -12,12 +12,12 @@ e o aluno será aprovado.
 function arredondamento (notaAluno) {
     console.log(`Função de arredondamento! Nota do Aluno: ${notaAluno}`)
 
-    if (notaAluno % 5 == 0) {
+    if (notaAluno % 5 == 0) { // Controle para identificar se a nota já está em um multiplo, assim não necessita arredondamento
         console.log('Nota do aluno já multipla de 5')
         return notaAluno
-    } else { 
-        for (let i = 1; i < 3; i++) {
-            if (((notaAluno + i) %5) == 0) {
+    } else { // Caso contrário, loop de 1-3 para identificar se em três tentativas ele está multiplo, ou seja, se ele está a no máximo 3 pontos de diferençã de um multiplo.
+        for (let i = 1; i < 3; i++) { 
+            if (((notaAluno + i) %5) == 0) { // Identificação utilizando o loop para chegar ao próximo multiplo
                 console.log(`Nota aluno: ${notaAluno} está a ${i} ponto de diferença do próximo multiplo! Arredondando nota para ${notaAluno + i}`)
                 return notaAluno + i
             }
@@ -31,6 +31,7 @@ function arredondamento (notaAluno) {
 function aprovacao(notaAluno){
     notaAluno = arredondamento(notaAluno)
 
+    // Regra final para montrar ao User
     if (notaAluno >= 40) {
         console.log(`Nota: ${notaAluno} - Aluno Aprovado! `)
     } else {

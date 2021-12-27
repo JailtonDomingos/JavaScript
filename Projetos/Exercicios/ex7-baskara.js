@@ -16,6 +16,7 @@ const baskara = function (a, b ,c) {
         return `Delta é negativo`
     }
 
+    // A função Match.sqrt() tira a raiz do number
     result.push(x2 = ((-b) + Math.sqrt(delta)) / (2 * a))
     result.push(x1 = ((-b) - Math.sqrt(delta)) / (2 * a))
     //return `x1: ${x1.toFixed(2)}, x2: ${x2.toFixed(2)}`
