@@ -1,3 +1,13 @@
+/*
+Function Description:
+Complete the getSecondLargest function in the editor below.
+getSecondLargest has the following parameters:
+int nums[n]: an array of integer
+
+Returns:
+int: the second largest number in 
+*/
+
 function getSecondLargest(nums) {
     // Complete the function
     let maior = 0, segundoMaior = 0
