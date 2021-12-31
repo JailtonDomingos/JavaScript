@@ -17,11 +17,11 @@ Note: The perimeter method must be lowercase and spelled correctly.
  */
 
 class Polygon {
-    constructor(sides){
+    constructor(sides){ // Class constructor
         this.sides = sides
     }
 
-    perimeter() {
+    perimeter() { // Function dentro do object que soma todos os sides passados no seu constructor
         return this.sides.reduce((a,b) => a + b)
     }
 }
