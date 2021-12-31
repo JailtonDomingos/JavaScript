@@ -1,20 +1,20 @@
-function primeraLinha (desenho, controlaEspacos) {
-    for (let i = 1; i <= controlaEspacos; i++) {
+function primeraLinha (desenho, controlaEspacos) { // Function que controla os espaços em branco iniciais da primeira linha
+    for (let i = 1; i <= controlaEspacos; i++) { // Percorre até a metade do desenho para colocar o primeiro asterisco
         desenho += '  '
     }
     desenho += '*'
     return desenho
 }
 
-function desenhaEspacos (desenho, controlaEspacos) {
-    for (let j = 1; j <= controlaEspacos; j++) { // For para controle dos espaços da linha
+function desenhaEspacos (desenho, controlaEspacos) { // Function que controla os espaços para as demais lihas != 1º linha
+    for (let j = 1; j <= controlaEspacos; j++) { // For para percorrer os espaçoes necessarios para inicio do desenho: -2 espaçoes do que a linha anterior
         desenho += '  '
     }
     return desenho
 }
 
 function desenhaTriangulo (desenho, variavelControle) {
-    for (let k = 1; k <= variavelControle; k++) { // For para printar 
+    for (let k = 1; k <= variavelControle; k++) { // For para printar os asteriscos
         desenho += '* '  
     }
     return desenho
@@ -28,11 +28,11 @@ function Rectangle(param) {
     if (param % 2 === 0) {
         return console.log('Por favor digite um número ímpar!')
     } else {
-        while (variavelControle <= param) {
-            if (variavelControle === 1) {
+        while (variavelControle <= param) { // Enquanto as linhas do triangulo não acabarem continua percorrendo
+            if (variavelControle === 1) { // Controle para a primeira linha / Inicio do desenho
                 desenho = primeraLinha(desenho, controlaEspacos)
 
-            } else {
+            } else { // Controle das demais linhas
                 desenho = desenhaEspacos(desenho, controlaEspacos)
                 desenho = desenhaTriangulo(desenho, variavelControle)  
 
