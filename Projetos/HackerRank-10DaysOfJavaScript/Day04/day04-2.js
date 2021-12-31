@@ -40,11 +40,11 @@ const arrayObjects = [
     },
 ]
 
-function getCount(arrayObjects) {
+function getCount(arrayObjects) { // Função responsavel por verificar quantas vezes números repitidos aparecem dentro do array de objects passados
     let variavelControle = 0
-    for (let i = 0; i < arrayObjects.length; i++) {
+    for (let i = 0; i < arrayObjects.length; i++) { // Contador array de objects
         if (arrayObjects[i].y === arrayObjects[i].x) {
-            variavelControle++
+            variavelControle++ // Variavel controladora para a contagem de vezes que ocorre a situação
         }
         
     }
