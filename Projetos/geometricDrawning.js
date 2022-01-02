@@ -1,3 +1,8 @@
+/*
+Esta aplicação fuciona após chamar a função 'Triangle' passando um valor da quantidade de linhas requisitada para o triangulo.
+Após isto a lógica da aplicação vai desenhar o triângulo de posição vertical de cima para baixo, calculando os espaços para cada linha desenhada.
+*/
+
 function primeraLinha (desenho, controlaEspacos) { // Function que controla os espaços em branco iniciais da primeira linha
     for (let i = 1; i <= controlaEspacos; i++) { // Percorre até a metade do desenho para colocar o primeiro asterisco
         desenho += '  '
