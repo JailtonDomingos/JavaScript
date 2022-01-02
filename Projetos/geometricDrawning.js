@@ -20,7 +20,7 @@ function desenhaTriangulo (desenho, variavelControle) {
     return desenho
 }
 
-function Rectangle(param) {
+function Triangle(param) {
    let desenho = '' 
    let controlaEspacos = Math.trunc(param/2)
    let variavelControle = 1
@@ -45,4 +45,4 @@ function Rectangle(param) {
     }
 }
 
-console.log(Rectangle(11))
+console.log(Triangle(11))
