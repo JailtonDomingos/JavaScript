@@ -6,8 +6,8 @@ let param = [2, 3, 24, 11, 19, 20, 21, 22, 23, 1]
 let menor = 0
 let maior = 0
 
-for (let i = 0; i < param.length; i++) {
-    if (param[i] < menor) {
+for (let i = 0; i < param.length; i++) { // Percorrendo array
+    if (param[i] < menor) { // Verificação simples
         menor = param[i]
     } else if (param[i] > maior){
         maior = param[i]
