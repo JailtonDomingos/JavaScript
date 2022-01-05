@@ -7,7 +7,7 @@ function lerArray (paramArray) {
     let par = 0
 
     for (let i = 0; i < paramArray.length; i++) {
-        if (i % 2 === 0) {
+        if (i % 2 === 0) { // Operador para verificação de divisão sem resto.
             par++
         } else {
             impar++
